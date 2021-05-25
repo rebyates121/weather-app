@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto+Mono:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/878c35dc40.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <img
+          class="top-image"
+          src="images/weather-app.svg"
+          alt="Woman lifting a sun up from behind clouds"
+        />
+        <div><h1>Weather App</h1></div>
+      </header>
+      <section class="searchCity">
+        <div class="container searchCity">
+          <div class="row">
+            <form class="search-form" id="search-form">
+              <div class="col-4 left">
+                <input
+                  type="search"
+                  id="city-input"
+                  placeholder="Enter city name here"
+                  aria-label="search"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+              </div>
+              <div class="col-4 middle">
+                <button type="button" class="btn btn-success">Search</button>
+              </div>
+              <div class="col-4 right">
+                <button type="button" class="btn btn-success" id="current-btn">
+                  Currently
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section class="currentWeather">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 left1" id="city">London</div>
+            <div class="col-4 middle1" id="currentTemp">
+              <span class="tempNumber">19°</span>
+              <span class="celsius">C</span>
+            </div>
+            <div class="col-4 right1">
+              <span class="humidity">Humidity %</span><br />
+              <span class="percentage">50</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 left2">Cloudy</div>
+            <div class="col-4 right2">
+              <span class="windSpeed">Wind Speed</span><br />
+              <span class="mph">5</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 left3" id="currentDate">21/04/2021</div>
+            <div class="col-6 right3" id="currentDayTime">
+              Wednesday : 15:00
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="updates">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <i class="fas fa-moon moon"></i><br />
+              00:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-moon moon"></i><br />
+              03:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-moon moon"></i><br />
+              06:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-cloud cloud"></i><br />
+              09:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              12:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              15:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              18:00
+            </div>
+            <div class="col-8">
+              <i class="fas fa-moon moon"></i><br />
+              21:00
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+
+      <section class="nextDays">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <span class="temperature">14°C</span><br />
+              <i class="fas fa-sun sun"></i><br />
+              Thursday 22/04
+            </div>
+            <div class="col-5">
+              <span class="temperature">15°C</span><br />
+              <i class="fas fa-sun sun"></i><br />
+              Friday 23/04
+            </div>
+            <div class="col-5">
+              <span class="temperature">15°C</span><br />
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              Saturday 24/04
+            </div>
+            <div class="col-5">
+              <span class="temperature">12°C</span><br />
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              Sunday 25/04
+            </div>
+            <div class="col-5">
+              <span class="temperature">15°C</span><br />
+              <i class="fas fa-cloud-sun cloud-sun"></i><br />
+              Monday 26/04
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Coded by Rebecca Yates</p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

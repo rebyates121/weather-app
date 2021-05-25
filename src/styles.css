@@ -1,0 +1,148 @@
+.content {
+  font-family: "New Tegomin", serif;
+  border: solid 5px #006ec5;
+  border-radius: 30px;
+  background-color: #d0f0f7ef;
+  padding: 10px 10px 20px;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 10px 10px 16px #000;
+}
+
+.top-image {
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+  left: 60px;
+  line-height: 1.5px;
+  font-size: 50px;
+  font-family: "Roboto Mono", monospace;
+  color: #006ec5;
+}
+
+#city-input {
+  width: 275px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  position: relative;
+  top: 30px;
+}
+
+.btn-success {
+  font-size: 25px;
+  background-color: #006ec5;
+  border-color: #006ec5;
+}
+
+.btn-success:hover {
+  background-color: #006ec5;
+  border-color: #006ec5;
+}
+
+.middle {
+  position: relative;
+  left: 280px;
+  bottom: 20px;
+}
+
+.right {
+  position: relative;
+  left: 400px;
+  bottom: 76px;
+  padding: 5px 0;
+}
+
+.left1,
+.middle1,
+.left2 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.right1,
+.right2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.left3,
+.right3 {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.left1,
+.right1,
+.right2,
+.left3,
+.right3 {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+}
+
+.tempNumber {
+  font-size: 50px;
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+}
+
+.celsius {
+  position: relative;
+  bottom: 45px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.left2 {
+  position: relative;
+  left: 30px;
+  bottom: 50px;
+}
+
+.right1,
+.right2,
+.right3 {
+  position: relative;
+  right: 20px;
+}
+
+.updates .col-8 {
+  width: 12.5%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.moon,
+.cloud,
+.cloud-sun,
+.sun {
+  font-size: 35px;
+}
+
+.nextDays .col-5 {
+  width: 20%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.temperature {
+  font-weight: 900;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.8;
+  position: relative;
+  top: 15px;
+}

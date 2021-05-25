@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Test</title>
+  </head>
+  <body>
+    👨‍🏫Your task On your project, when a user searches for a city (example: New
+    York), it should display the name of the city on the result page and the
+    current temperature of the city. 🙀 Bonus point: Add a Current Location
+    button. When clicking on it, it uses the Geolocation API to get your GPS
+    coordinates and display and the city and current temperature using the
+    OpenWeather API.
+    <script>
+      function showResponse(response) {
+        console.log(response.data.weather);
+      }
+
+      let apiKey = "efb771bfb7ce128cb70f69f945fe6a81";
+      let apiFront = "https://api.openweathermap.org/data/2.5/weather";
+      let units = "metric";
+      let city = "london";
+      let apiUrl = `${apiFront}?q=${city}&appid=${apiKey}&units=${units}`;
+      axios.get(apiUrl).then(showResponse);
+    </script>
+  </body>
+</html>
