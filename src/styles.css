@@ -146,3 +146,7 @@ footer {
   position: relative;
   top: 15px;
 }
+
+.code-link {
+  text-decoration: none;
+}
