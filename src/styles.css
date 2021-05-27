@@ -1,14 +1,21 @@
+body {
+  background-image: url(../images/clouds.jpg);
+  background-size: contain;
+}
+
 .content {
   font-family: "New Tegomin", serif;
-  border: solid 5px #006ec5;
+  border: solid 5px #000;
   border-radius: 30px;
-  background-color: #d0f0f7ef;
+  background-color: transparent;
   padding: 10px 10px 20px;
   max-width: 600px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
   box-shadow: 10px 10px 16px #000;
+  color: #ececec;
+  text-shadow: #000 1px 0 10px;
 }
 
 .top-image {
@@ -19,45 +26,68 @@ h1 {
   text-align: center;
   position: relative;
   bottom: 80px;
-  left: 60px;
+  left: 70px;
   line-height: 1.5px;
   font-size: 50px;
   font-family: "Roboto Mono", monospace;
-  color: #006ec5;
+  color: #c28b8f;
+  text-shadow: #000 1px 0 10px;
+  font-weight: 900;
 }
 
 #city-input {
   width: 275px;
   border-radius: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 10px;
   font-size: 18px;
   position: relative;
   top: 30px;
 }
 
-.btn-success {
-  font-size: 25px;
-  background-color: #006ec5;
-  border-color: #006ec5;
+#city-input:focus {
+  background-color: #fff !important;
 }
 
-.btn-success:hover {
-  background-color: #006ec5;
-  border-color: #006ec5;
+.btn-search {
+  font-size: 25px;
+  background-color: #c28b8f;
+  border: solid 3px #ececec;
+  box-shadow: 5px 6px 8px #708098;
+  text-shadow: #000 1px 0 10px;
+  transition: all 1ms ease-in-out;
+}
+
+.btn-search:hover {
+  background-color: #ececec;
+  border: solid 3px #c28b8f;
+  color: #c28b8f;
+  text-shadow: none;
+}
+
+.btn-search:active,
+:focus {
+  background-color: #c28b8f !important;
+  border: solid 3px #ececec !important;
+  text-shadow: #000 1px 0 10px !important;
+}
+
+.btn-success {
+  background-color: #c28b8f;
+  border-color: #ececec;
 }
 
 .middle {
   position: relative;
-  left: 280px;
-  bottom: 20px;
+  left: 290px;
+  bottom: 25px;
 }
 
 .right {
   position: relative;
-  left: 400px;
-  bottom: 76px;
+  left: 410px;
+  bottom: 85px;
   padding: 5px 0;
 }
 
@@ -90,16 +120,22 @@ h1 {
   text-align: center;
 }
 
-.tempNumber {
-  font-size: 50px;
+.left1,
+.right1 {
   position: relative;
-  bottom: 50px;
-  left: 20px;
+  bottom: 90px;
+}
+
+.tempNumber {
+  font-size: 60px;
+  position: relative;
+  bottom: 60px;
+  left: 30px;
 }
 
 .celsius {
   position: relative;
-  bottom: 45px;
+  bottom: 55px;
   right: 20px;
   font-size: 30px;
 }
@@ -107,7 +143,17 @@ h1 {
 .left2 {
   position: relative;
   left: 30px;
-  bottom: 50px;
+}
+
+.left2,
+.right2 {
+  position: relative;
+  bottom: 65px;
+}
+
+.mph,
+.percentage {
+  font-weight: 500;
 }
 
 .right1,
