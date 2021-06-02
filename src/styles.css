@@ -3,7 +3,7 @@ body {
   background-size: contain;
 }
 
-.content {
+.container {
   font-family: "New Tegomin", serif;
   border: solid 5px #000;
   border-radius: 30px;
@@ -16,6 +16,15 @@ body {
   box-shadow: 10px 10px 16px #000;
   color: #ececec;
   text-shadow: #000 1px 0 10px;
+}
+
+.searchCity,
+.currentWeather .container,
+.updates .container,
+.nextDays .container {
+  border: none;
+  box-shadow: none;
+  padding: 0 10px;
 }
 
 .top-image {
@@ -129,20 +138,45 @@ h1 {
 .tempNumber {
   font-size: 60px;
   position: relative;
-  bottom: 60px;
-  left: 30px;
+  bottom: 95px;
+  left: 40px;
 }
 
 .celsius {
   position: relative;
-  bottom: 55px;
-  right: 20px;
-  font-size: 30px;
+  bottom: 60px;
+  right: 50px;
+  font-size: 25px;
+}
+
+.fahrenheit {
+  font-size: 25px;
+  position: relative;
+  bottom: 115px;
+  left: 100px;
+}
+
+.currentWeather .active {
+  color: #ececec;
+  text-shadow: #000 1px 0 10px;
+  cursor: default;
+  text-decoration: none;
+}
+
+.currentWeather .active:hover {
+  text-decoration: none;
 }
 
 .left2 {
   position: relative;
   left: 30px;
+  text-transform: capitalize;
+}
+
+.middle2 {
+  position: relative;
+  bottom: 100px;
+  left: 20px;
 }
 
 .left2,

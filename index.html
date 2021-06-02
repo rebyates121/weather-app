@@ -25,7 +25,7 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="content">
+    <div class="container">
       <header>
         <img
           class="top-image"
@@ -72,8 +72,13 @@
           <div class="row">
             <div class="col-4 left1" id="city">London</div>
             <div class="col-4 middle1" id="currentTemp">
-              <span class="tempNumber">19°</span>
-              <span class="celsius">C</span>
+              <span class="tempNumber">19</span>
+              <span class="celsius"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+              </span>
+              <span class="fahrenheit"
+                ><a href="#" id="fahrenheit-link">°F</a>
+              </span>
             </div>
             <div class="col-4 right1">
               <span class="humidity">Humidity %</span><br />
@@ -81,7 +86,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-8 left2">Cloudy</div>
+            <div class="col-4 left2">Cloudy</div>
+            <div class="col-4 middle2">
+              <img src=".." alt="Clear" width="100" id="icon" />
+            </div>
             <div class="col-4 right2">
               <span class="windSpeed">Wind Speed</span><br />
               <span class="mph">5</span>
