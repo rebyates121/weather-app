@@ -197,27 +197,17 @@ h1 {
   right: 20px;
 }
 
-.updates .col-8 {
-  width: 12.5%;
+.weather-forecast {
+  margin-top: 20px;
   text-align: center;
-  font-weight: 700;
 }
 
-.moon,
-.cloud,
-.cloud-sun,
-.sun {
-  font-size: 35px;
+.weather-forecast-day {
+  font-size: 16px;
 }
 
-.nextDays .col-5 {
-  width: 20%;
-  text-align: center;
-  font-size: 22px;
-}
-
-.temperature {
-  font-weight: 900;
+.weather-forecast-temperature {
+  font-size: 13px;
 }
 
 footer {
