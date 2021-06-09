@@ -8,7 +8,7 @@ body {
   border: solid 5px #000;
   border-radius: 30px;
   background-color: transparent;
-  padding: 10px 10px;
+  padding: 10px 10px 0;
   max-width: 600px;
   display: block;
   margin: 0 auto;
@@ -192,9 +192,9 @@ h1 {
 
 .hourly-forecast {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
-  bottom: 40px;
+  bottom: 50px;
   border-top: dashed 2px #708098;
   padding: 10px 0;
 }
@@ -204,24 +204,24 @@ h1 {
 }
 
 .hourly-forecast-temperature {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .weather-forecast {
   text-align: center;
   position: relative;
-  bottom: 20px;
+  bottom: 50px;
   border-top: dashed 2px #708098;
   padding: 10px 0;
 }
 
 .weather-forecast-day {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
 }
 
 .weather-forecast-temperature {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .weather-forecast-temperature-max {
@@ -235,6 +235,8 @@ h1 {
 footer {
   text-align: center;
   opacity: 0.8;
+  position: relative;
+  bottom: 20px;
 }
 
 .code-link {
