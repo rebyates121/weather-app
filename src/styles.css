@@ -8,20 +8,19 @@ body {
   border: solid 5px #000;
   border-radius: 30px;
   background-color: transparent;
-  padding: 10px 10px 20px;
+  padding: 10px 10px;
   max-width: 600px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: 10px 10px 16px #000;
   color: #ececec;
-  text-shadow: #000 1px 0 10px;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #c28b8f, 0 0 0.2em #c28b8f;
 }
 
 .searchCity,
-.currentWeather .container,
-.updates .container,
-.nextDays .container {
+.currentWeather .container {
   border: none;
   box-shadow: none;
   padding: 0 10px;
@@ -39,8 +38,8 @@ h1 {
   line-height: 1.5px;
   font-size: 50px;
   font-family: "Roboto Mono", monospace;
-  color: #c28b8f;
-  text-shadow: #000 1px 0 10px;
+  color: #ececec;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #c28b8f, 0 0 0.2em #c28b8f;
   font-weight: 900;
 }
 
@@ -121,6 +120,7 @@ h1 {
 
 .left1,
 .right1,
+.left2,
 .right2,
 .left3,
 .right3 {
@@ -138,7 +138,7 @@ h1 {
 .tempNumber {
   font-size: 60px;
   position: relative;
-  bottom: 95px;
+  bottom: 100px;
   left: 40px;
 }
 
@@ -146,14 +146,14 @@ h1 {
   position: relative;
   bottom: 60px;
   right: 50px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .fahrenheit {
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
-  bottom: 115px;
-  left: 100px;
+  bottom: 60px;
+  right: 45px;
 }
 
 .currentWeather .active {
@@ -169,13 +169,13 @@ h1 {
 
 .left2 {
   position: relative;
-  left: 30px;
+  left: 10px;
   text-transform: capitalize;
 }
 
 .middle2 {
   position: relative;
-  bottom: 100px;
+  bottom: 60px;
   left: 20px;
 }
 
@@ -198,23 +198,31 @@ h1 {
 }
 
 .weather-forecast {
-  margin-top: 20px;
   text-align: center;
+  position: relative;
+  bottom: 20px;
 }
 
 .weather-forecast-day {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: 600;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.8;
 }
 
 footer {
   text-align: center;
   opacity: 0.8;
-  position: relative;
-  top: 15px;
 }
 
 .code-link {
