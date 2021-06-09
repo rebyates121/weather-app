@@ -52,10 +52,19 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+function formatHour(timestamp) {
+  let d = new Date(timestamp * 1000);
+  let hour = d.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let time = hour + ":00";
+  return time;
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
-  let forecastElement = document.querySelector("#forecast");
-
+  let forecastElement = document.querySelector("#weather-forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
@@ -82,9 +91,35 @@ function displayForecast(response) {
     `;
     }
   });
-
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+
+  let hourly = response.data.hourly;
+  let hourElement = document.querySelector("#hourly-forecast");
+  let hourHTML = `<div class="row">`;
+  hourly.forEach(function (forecastHour, index) {
+    if (index < 12) {
+      hourHTML =
+        hourHTML +
+        `
+        <div class="col-2">
+          <div class="hourly-forecast-hour">${formatHour(forecastHour.dt)}</div>
+          <img
+            src="https://openweathermap.org/img/wn/${
+              forecastHour.weather[0].icon
+            }@2x.png"
+            alt=""
+            width="42"
+          />
+          <div class="hourly-forecast-temperature">${Math.round(
+            forecastHour.temp
+          )}°</div>
+        </div>
+    `;
+    }
+  });
+  hourHTML = hourHTML + `</div>`;
+  hourElement.innerHTML = hourHTML;
 }
 
 function getForecast(coordinates) {

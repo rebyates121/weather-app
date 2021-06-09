@@ -197,10 +197,29 @@ h1 {
   right: 20px;
 }
 
+.hourly-forecast {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  bottom: 40px;
+  border-top: dashed 2px #708098;
+  padding: 10px 0;
+}
+
+.hourly-forecast-hour {
+  font-weight: 800;
+}
+
+.hourly-forecast-temperature {
+  font-weight: 600;
+}
+
 .weather-forecast {
   text-align: center;
   position: relative;
   bottom: 20px;
+  border-top: dashed 2px #708098;
+  padding: 10px 0;
 }
 
 .weather-forecast-day {
