@@ -138,22 +138,15 @@ h1 {
 .tempNumber {
   font-size: 60px;
   position: relative;
-  bottom: 100px;
-  left: 40px;
+  bottom: 80px;
+  left: 35px;
 }
 
 .celsius {
   position: relative;
-  bottom: 60px;
-  right: 50px;
-  font-size: 20px;
-}
-
-.fahrenheit {
-  font-size: 20px;
-  position: relative;
-  bottom: 60px;
-  right: 45px;
+  bottom: 80px;
+  left: 30px;
+  font-size: 22px;
 }
 
 .currentWeather .active {
@@ -175,7 +168,7 @@ h1 {
 
 .middle2 {
   position: relative;
-  bottom: 60px;
+  bottom: 70px;
   left: 20px;
 }
 
